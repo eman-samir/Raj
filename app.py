@@ -5,13 +5,13 @@ from langchain_community.vectorstores import FAISS
 
 
 #  Configure Gemini
-genai.configure(api_key="AIzaSyB6kkc5pN_eW4L2Gw7gdvRNqUIso0QXvSQ")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 #  UI
 st.set_page_config(page_title="Architecture Chatbot", page_icon="🏛️")
 
-#st.image("logo.png", width=200)
+st.image("logo.png", width=200)
 st.title("🏛️ Architecture Chatbot")
 st.write("Ask anything about architecture!")
 
