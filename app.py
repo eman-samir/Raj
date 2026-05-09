@@ -9,7 +9,7 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 #  UI
-st.set_page_config(page_title="Architecture Chatbot", page_icon="🏛️")
+st.set_page_config(page_title="Architecture", page_icon="🏛️")
 
 st.image("logo.png", width=200)
 st.title("Architecture Chatbot")
