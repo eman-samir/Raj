@@ -12,7 +12,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 st.set_page_config(page_title="Architecture Chatbot", page_icon="🏛️")
 
 st.image("logo.png", width=200)
-st.title("🏛️ Architecture Chatbot")
+st.title("Architecture Chatbot")
 st.write("Ask anything about architecture!")
 
 #  Chat history memory
@@ -74,13 +74,13 @@ if query:
         with st.expander("Sources"):
             for i, doc in enumerate(docs[:3]):
                 meta = doc.metadata
-        # حاول تجيب البيانات من الميتاداتا لو موجودة
+       
                 author = meta.get("author", "Unknown Author")
                 year = meta.get("year", "n.d.")
                 title = meta.get("title", "Untitled")
                 source = meta.get("source", "Retrieved from database")
 
-        # صياغة APA style citation
+        #  APA style citation
                 citation = f"{author} ({year}). {title}. {source}"
 
                 st.write(f"Source {i+1}: {citation}")
