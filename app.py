@@ -12,7 +12,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 st.set_page_config(page_title="Architecture", page_icon="🏛️")
 
 st.image("logo.png", width=200)
-st.title("Architecture")
+st.title("The Intelligent Architecture Assistant")
 st.write("Ask anything about architecture!")
 
 #  Chat history memory
